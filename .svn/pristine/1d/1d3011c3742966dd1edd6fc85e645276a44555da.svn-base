@@ -1,0 +1,46 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    </plugin-info>
+
+    <preBuildAction key="startBuildAction" name="Start Build Action"
+                    class="ru.lanit.bamboo.plugins.StartBuildAction">
+    </preBuildAction>
+
+    <preChainAction key="startChainAction" name="Start Chain Action"
+                    class="ru.lanit.bamboo.plugins.StartChainAction">
+    </preChainAction>
+
+    <notificationType key="buildPlanStarted" name="Job started" weight="55"
+                      class="ru.lanit.bamboo.plugins.StartBuildNotificationType">
+        <description>Notification sent for every job that starts building</description>
+        <scope>plan</scope>
+    </notificationType>
+
+    <notificationType key="buildChainStarted" name="Build started" weight="25"
+                      class="ru.lanit.bamboo.plugins.StartChainNotificationType">
+        <description>Notification sent for every build plan that starts building</description>
+        <scope>chain</scope>
+    </notificationType>
+
+    <component-import key="transactionTemplate" name="Hibernate Transaction Template"
+                      interface="com.atlassian.sal.api.transaction.TransactionTemplate">
+        <description>Component that provides a hibernate transaction</description>
+    </component-import>
+
+    <component-import key="planManager" name="Build Plan Manager"
+                      interface="com.atlassian.bamboo.plan.PlanManager">
+    </component-import>
+
+    <component-import key="notificationDispatcher" name="Notification Dispatcher"
+                      interface="com.atlassian.bamboo.notification.NotificationDispatcher">
+    </component-import>
+
+    <component-import key="notificationManager" name="Notification Manager"
+                      interface="com.atlassian.bamboo.notification.NotificationManager">
+    </component-import>
+
+    <resource type="i18n" name="${project.name} language" location="english"/>
+</atlassian-plugin>

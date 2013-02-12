@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.tek42.perforce:p4java:0.7.5-atlassian-8">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/tek42/perforce/p4java/0.7.5-atlassian-8/p4java-0.7.5-atlassian-8.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/tek42/perforce/p4java/0.7.5-atlassian-8/p4java-0.7.5-atlassian-8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/tek42/perforce/p4java/0.7.5-atlassian-8/p4java-0.7.5-atlassian-8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

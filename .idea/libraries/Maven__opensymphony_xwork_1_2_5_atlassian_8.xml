@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: opensymphony:xwork:1.2.5-atlassian-8">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/opensymphony/xwork/1.2.5-atlassian-8/xwork-1.2.5-atlassian-8.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/opensymphony/xwork/1.2.5-atlassian-8/xwork-1.2.5-atlassian-8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/opensymphony/xwork/1.2.5-atlassian-8/xwork-1.2.5-atlassian-8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
